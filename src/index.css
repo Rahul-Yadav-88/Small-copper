@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer components {
+    .responsivewidth {
+      @apply mx-auto w-[94%] sm:w-[90%] md:w-[88%] lg:w-[89.5%];
+    }
+  }
+
+  @keyframes scrollx {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scrollx {
+  animation: scrollx 60ms linear infinite;
+  will-change: transform;
+}
+
