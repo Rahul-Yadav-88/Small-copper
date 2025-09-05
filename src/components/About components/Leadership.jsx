@@ -22,11 +22,11 @@ const LeadershipTeam = () => {
       </div>
 
       {/* Team Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center items-start gap-4 max-w-6xl">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center items-start gap-4 max-w-6xl ">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center p-2 rounded-2xl hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col items-center text-center  rounded-2xl   p-2 py-9"
           >
             <div className="flex items-center justify-center mb-6">
               <img
@@ -36,10 +36,10 @@ const LeadershipTeam = () => {
               />
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-1xl md:text-2xl font-bold text-gray-900 mb-2">
                 {member.name}
               </h3>
-              <p className="text-lg text-gray-600">{member.position}</p>
+              <p className="text-1xl  text-gray-600">{member.position}</p>
             </div>
           </div>
         ))}

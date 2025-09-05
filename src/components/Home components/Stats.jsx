@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import CountUp from 'react-countup';
 
 const Stats = () => {
   const stats = [
-    { number: '50+', label: 'Global Clients' },
-    { number: '120+', label: 'Projects Delivered' },
-    { number: '30+', label: 'Skilled Professionals' },
-    { number: '10+', label: 'Industry Experience' }
-  ]
+    { number: 50, label: 'Global Clients' },
+    { number: 120, label: 'Projects Delivered' },
+    { number: 30, label: 'Skilled Professionals' },
+    { number: 10, label: 'Industry Experience' }
+  ];
 
   return (
     <section className="px-4 py-10">
@@ -15,7 +16,14 @@ const Stats = () => {
           {stats.map((stat, index) => (
             <div key={index} className="text-center relative">
               <div className="text-4xl md:text-5xl font-bold text-[#FFA559] mb-2">
-                {stat.number}
+                <CountUp
+                end={stat.number}
+                duration={2}
+                suffix="+"
+                enableScrollSpy
+                scrollSpyOnce
+              />
+
               </div>
               <div className="text-gray-600 font-medium">
                 {stat.label}
@@ -28,8 +36,7 @@ const Stats = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Stats
-
+export default Stats;

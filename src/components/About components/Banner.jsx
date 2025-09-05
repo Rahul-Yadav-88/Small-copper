@@ -5,7 +5,7 @@ function Banner() {
   return (
     <div className="flex justify-center items-center h-[70vh]">
       <div
-        className="w-[90%] md:w-[80%] lg:w-[70%] bg-cover bg-center rounded-3xl flex flex-col items-center justify-center text-center py-12 px-6 shadow-lg"
+        className="w-[90%] md:w-[80%] lg:w-[90%] bg-cover bg-center rounded-3xl flex flex-col items-center justify-center text-center py-12 px-6 shadow-lg "
         style={{ backgroundImage: `url(banner2.png)` }}
       >
         {/* Heading */}
@@ -19,11 +19,11 @@ function Banner() {
         </p>
 
         {/* Buttons */}
-        <div className="flex gap-4">
+        <div className="md:flex md:gap-4   inline-block  space-y-2 md:space-y-0 w-[90%] md:w-[fit-content] space-x-4">
           <button className="bg-orange-400 hover:bg-orange-500 text-white font-medium py-2 px-6 rounded-full transition">
             Start Your Project
           </button>
-          <button className="bg-white hover:bg-gray-100 text-gray-900 font-medium py-2 px-6 rounded-full border transition">
+          <button className="bg-white hover:bg-gray-100 text-gray-900 font-medium py-2 px-12 rounded-full  transition">
             Contact Us
           </button>
         </div>

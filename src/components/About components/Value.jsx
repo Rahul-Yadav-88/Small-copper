@@ -25,16 +25,16 @@ export const Values = () => {
     ]
   return (
    
-<div className="min-h-screen bg-white px-8 py-10">
+<div className="min-h-screen bg-white px-8 py-10 ">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* Top Section - Our Journey and Mission/Vision */}
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Our Journey Section */}
           <div className="flex-1 bg-gray-100 p-12 rounded-4xl">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            <h2 className="text-5xl my-2 font-bold text-gray-900 mb-8 text-center">
               Our Journey
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed my-20 tracking-wide">
               Founded with the belief that technology should empower, not overwhelm, Small Copper began as a small team of passionate developers and designers. Over the years, we have grown into a global technology partner trusted by startups, enterprises, and forward-thinking brands. Our focus has always been on delivering simple, scalable, and impactful solutions that create lasting value for our clients.
             </p>
           </div>
@@ -77,7 +77,7 @@ export const Values = () => {
                      <p className='text-xl md:text-3xl'>{elem.icon}</p>
                     <h4 className='text-xl sm:text-2xl mb-5 font-bold text-[#262626]'>{elem.title}</h4>
                    </div>
-                    <p>{elem.desc}</p>
+                    <p className='text-center'>{elem.desc}</p>
                 </div>
             ))
         }
